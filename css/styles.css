@@ -193,6 +193,33 @@ body {
   background-color: #303030;
 }
 
+/* tab */
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: url();
+  }
+}
+
+/* 2x-mob */
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px)
+   {
+  .section-hero {
+    background-image: url();
+  }
+}
+
+/* 2x-tab */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px)
+   {
+  .section-hero {
+    background-image: url();
+  }
+}
+
 .main-title {
   font-size: 56px;
   line-height: 1.07;
