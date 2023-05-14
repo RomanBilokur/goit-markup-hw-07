@@ -119,36 +119,132 @@ body {
 
 }
 
-.mobile-menu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: var(--fond-color) ;
-  z-index: 1000;
+.mobile-menu-open-icon {
+  stroke: #2e2f42;
+  top: 24px;
+  right: 24px;
 }
 
-.mobile-menu-container {
-  position: relative;
+/* mobile-menu-close */
+.mobile-menu-close-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 24px 40px 40px;
+  background-color: var(--fond-color) ;
+  z-index: 1000;
+  transition: var(--transition);
 }
 
 .mobile-menu-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
-  background-color: transparent;
-  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(231, 233, 252, 0.1);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding: 0;
-  line-height: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: auto;
 }
 
-.mobile-menu-open-icon {
-  stroke: #2e2f42;
-  top: 24px;
-  right: 24px;
+.mobile-menu-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+}
+
+.mobile-menu-address {
+  font-style: normal;
+}
+
+.mobile-menu-contacs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+
+
+.mobile-menu-contacs-tel {
+  display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--logo-btm-color);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 427px) {
+  .mobile-menu-contacs-tel {
+    font-size: 26px;
+  } 
+}
+
+.mobile-menu-contacs-mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.mobile-menu-socials {
+  display: flex;
+  gap: 56px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 427px) {
+  .mobile-menu-socials {
+    gap: 34px;
+  } 
+}
+
+.mobile-menu-socials-list {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-btm-color);
+  border-radius: 50%;
+}
+
+.mobile-menu-socials-icon {
 
 }
+
+.mobile-menu-close-container .is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 
 /* .page-header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
