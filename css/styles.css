@@ -570,11 +570,11 @@ body {
   transition: color var(--transition), background var(--transition);
 }
 
-/* .modal-btn:hover,
+.modal-btn:hover,
 .modal-btn:focus {
   background: var(--btn-color);
   color: var(--fond-color);
-} */
+}
 
 @media screen and (max-width: 767px) {
   .main-title {
@@ -665,13 +665,13 @@ body {
   border-radius: 4px;
 }
 
-/* @media only screen and (min-width: 320px) and (max-width: 414px) {
+@media only screen and (min-width: 320px) and (max-width: 414px) {
   .distinctive-features-text {
     width: 100%;
     font-size: 14px;
   } 
   
-} */
+}
 
 @media screen and (max-width: 767px) {
   .flex-container-s {
@@ -681,6 +681,7 @@ body {
   }
   
   .flex-h-s {
+    display: block;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
