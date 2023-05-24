@@ -1408,9 +1408,13 @@ color: var(--fond-color);
   background-color: #fcfcfc;
 }
 
-@media screen {
-  
-}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 392px;
+  width: 100%;
+  }
+  }
 
 .modal-close-btn {
   position: absolute;
