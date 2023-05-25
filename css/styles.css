@@ -230,6 +230,7 @@ opacity: 0;
     overflow: hidden;
     transform: translate(-100%);
   }
+
   .mobile-menu-close-container:hover .mobile-menu-open ,
   .mobile-menu-close-container:focus .mobile-menu-open {
     transform: translate(0 0);
@@ -557,6 +558,87 @@ opacity: 0;
     background-image: url();
   }
 } */
+
+@media only screen and (max-width: 428px) {
+    .section-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero/mob/people-office-mob.jpg");
+    }
+  
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url("../images/hero/mob/people-office-mob@2x.jpg");
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 429px) and (max-width: 768px) {
+    .section-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero/tab/people-office-tab.jpg");
+    }
+  
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url("../images/hero/tab/people-office-tab@2x.jpg");
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .section-hero {
+      height: 436px;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .section-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero/des/people-office-des.jpg");
+    }
+  
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url("../images/hero/des/people-office-des@2x.jpg");
+      }
+    }
+  }
+
+@media only screen and (min-width: 1158px) {
+  .section-hero {
+    padding: 188px 0;
+
+    max-width: 1440px;
+    height: 600px;
+  }
+}
 
 .main-title {
   font-size: 56px;
