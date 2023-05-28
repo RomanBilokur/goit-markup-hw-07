@@ -1611,6 +1611,7 @@ color: var(--fond-color);
 
 .modal-form-check-desc::before {
   display: inline-block;
+  vertical-align: middle;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
