@@ -217,7 +217,7 @@ body {
   padding: 80px 24px 40px 40px;
   background-color: var(--fond-color) ;
   z-index: 1000;
-  transition: transform var(--transition);
+  transition: transform 500ms linear;
   transform: translateX(100%);
 }
 
@@ -1610,7 +1610,7 @@ color: var(--fond-color);
 }
 
 .modal-form-check-desc::before {
-  display: block;
+  display: inline-block;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1654,14 +1654,14 @@ color: var(--fond-color);
 
 
 .modal-form-check-desc {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  /* display: inline-block;
-  vertical-align: middle; */
+  display: inline-block; */
+  vertical-align: middle;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  margin-right: 8px;
+  /* margin-right: 8px; */
   margin-bottom: 24px;
   color: var(--border-link);
 }
