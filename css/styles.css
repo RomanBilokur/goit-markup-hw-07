@@ -1654,10 +1654,10 @@ color: var(--fond-color);
 
 
 .modal-form-check-desc {
-  /* display: flex;
-  align-items: center; */
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  /* display: inline-block;
+  vertical-align: middle; */
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
